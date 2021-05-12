@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "The School of Frida Witchcraft: Java Spellcasting Errata"
-date:   2021-05-11 18:00:00 -0500
-categories: frida android
+date:   2019-07-01 09:00:00 -0500
+categories: frida android java
 ---
 
+This post originally appeared at <https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2019/june/new-pagethe-school-of-frida-witchcraft-java-spellcasting-errata/> but is copied here due to linkrot.
 
 Frida is a dynamic instrumentation framework: it allows you to carve into an
 application's internals, mess around with objects, change function logic,

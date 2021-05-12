@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Advanced Frida Witchcraft: Turning an Android Application into a Voodoo Doll"
-date:   2021-05-11 18:30:00 -0500
+date:   2019-07-02 09:00:00 -0500
 categories: frida android
 ---
+
+This post originally appeared at <https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2019/june/advanced-frida-witchcraft-turning-an-android-application-into-a-voodoo-doll/> but is copied here due to linkrot.
 
 When faced with obfuscated native cryptography libraries, why spend time
 reverse engineering if you can just turn the library into an oracle to do your
