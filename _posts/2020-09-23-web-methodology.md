@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Methodology for High-Quality Web Application Security Testing"
-date:   2019-04-10 09:00:00 -0500
+date:   2020-09-23 09:00:00 -0500
 categories: web
 ---
 
