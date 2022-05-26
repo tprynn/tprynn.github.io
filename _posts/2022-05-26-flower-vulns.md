@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Multiple Vulnerabilities in Flower and Downstream Attacks on Airflow"
-date:   2022-06-26 09:00:00 -0500
+date:   2022-05-26 09:00:00 -0500
 ---
 
 This post discloses two vulnerabilities in [Flower](https://github.com/mher/flower), a popular open-source web application deployed along with Celery (a task queue for Python):
