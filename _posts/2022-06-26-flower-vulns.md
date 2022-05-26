@@ -2,8 +2,6 @@
 layout: post
 title:  "Multiple Vulnerabilities in Flower and Downstream Attacks on Airflow"
 date:   2022-06-26 09:00:00 -0500
-categories: authn
-published: true
 ---
 
 This post discloses two vulnerabilities in [Flower](https://github.com/mher/flower), a popular open-source web application deployed along with Celery (a task queue for Python):
@@ -30,8 +28,6 @@ Flower is a web app which allows monitoring and managing [Celery](https://docs.c
 * There are likely many more instances which are only accessible on internal/corporate networks.
 
 ## Lack of CSRF and SSRF Protections
-
-
 
 Flower lacks CSRF protection, meaning that if a user with access to a Flower instance visits a malicious website, that site could run JavaScript which calls Flower's APIs. This would primarily be used to exploit other vulnerabilities, such as through the arbitrary task invocation issue. The lack of CSRF protections apply to all web routes, APIs, and the `api/task/events` websocket endpoint. In particular, websocket connections can be used to solidly confirm the presence of the vulnerable listener on internal networks and also leak some minor information.
 
