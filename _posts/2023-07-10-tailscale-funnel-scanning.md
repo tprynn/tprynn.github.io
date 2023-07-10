@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Scanning Tailscale Funnel - An Overexposed Underbelly"
+title:  "Scanning Tailscale Funnel"
 date:   2023-7-10 09:00:00 -0500
 ---
 
