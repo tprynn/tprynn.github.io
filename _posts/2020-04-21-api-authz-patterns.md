@@ -121,6 +121,7 @@ This is probably the easiest pattern to audit because all authorization checks e
 
 The object-based pattern is fundamentally similar to the centralized pattern, but permissions are defined on each object (i.e. one authorization method or config file per object). This is more scalable as the number of objects increases.
 
+~~~rb
 class UserProfile
 
  def authorize(user)
@@ -138,12 +139,13 @@ class Message
    can :read, Message, id: readable_messages
  end
 end
+~~~
 
 The primary downside to this pattern is that it multiplies the number of places where an authorization issue could occur by the number of object types. With this pattern, it becomes much more important to implement SDLC gates around the authorization logic:
 
-    Extra code review or scrutiny when creating or modifying authorization methods
-    Custom static analysis tools which identify unsafe authorization methods
-    Authorization-aware test frameworks which enable developers to easily test authorization
+* Extra code review or scrutiny when creating or modifying authorization methods
+* Custom static analysis tools which identify unsafe authorization methods
+* Authorization-aware test frameworks which enable developers to easily test authorization
 
 When auditing this pattern, typically the same approach is used as with the centralized pattern. However, object-based logic is usually present in much larger and more complex codebases. As a result, I’ve tended to focus on specific features and only read the authorization logic for the objects associated with each feature in isolation. Trying to systematically audit the authorization logic for every object at once is nearly impossible because there is too much code to keep in your head and the relationships between objects are not clear without actually using the application.
 
